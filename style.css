@@ -186,7 +186,31 @@
   .showcase {
     width: auto;
     margin: 1rem -3rem;
-    background-image: url("img/consoles/pngwing-NintendoSwitch1.png");
+    background-image: url("img/consoles/pngwing-NintendoSwitch1a.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28rem;
+  }
+  .showcase2 {
+    width: auto;
+    margin: 1rem -3rem;
+    background-image: url("img/a2600overlay.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28rem;
+  }
+  .showcase3 {
+    width: auto;
+    margin: 1rem -3rem;
+    background-image: url("img/nintendonesoverlay.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -197,10 +221,26 @@
   }
   .showcase-video iframe {
     border: #000 5px solid;
+    top: 100px;
     width: 38rem;
     height: 22rem;
     display: flex;
   }
+
+  .showcase-video2 iframe {
+    border: #000 5px solid;
+    width: 35em;
+    height: 26rem;
+    display: flex;
+  }
+  .showcase-video3 iframe {
+    border: #000 4px solid;
+    margin-top: -10px;
+    width: 35em;
+    height: 26rem;
+    display: flex;
+  }
+
   .showcase-img {
     display: none;
   }
@@ -211,7 +251,7 @@
   .nota1,
   .nota2,
   .nota3 {
-    padding: 0.5rem;
+    padding: 0rem 0rem;
     margin: 0.5rem 2rem;
     display: flex;
     justify-content: center;
@@ -221,14 +261,15 @@
   .nota2:hover,
   .nota3:hover {
     background-color: var(--color-txt-alt);
-    margin: 0;
-    padding: 2% 4%;
+    padding: 0rem 2rem;
+    margin: 0.5rem 0rem;
     transition: 300ms;
   }
   .nota1:not(hover),
   .nota2:not(hover),
   .nota3:not(hover) {
-    margin: 0% 2%;
+    padding: 0rem 0rem;
+    margin: 0.5rem 2rem;
     transition: 300ms;
   }
   .consola {
@@ -265,86 +306,92 @@
   }
   
   /*contacto*/
-  .titulador {
-    top: 0;
+  .contacto{
     display: flex;
-    width: 100%;
-    margin: 0 0 0.5rem 0;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 0;
   }
-  .titulador h2 {
-    margin: 0.5rem;
-    justify-content: start;
-  }
-  .btn-form {
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: var(--color-snd);
-    font-family: var(--font-family-alt);
-    font-size: 1.1rem;
-    font-weight: var(--font-bold);
-    color: var(--color-txt-alt);
-    border: 1px solid var(--color-snd);
-    border-radius: 10px;
-    cursor: pointer;
+  .polaroidcontacto {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+    height: 50%;
+    background: #ffffff;
     display: inline-block;
+    margin: 25px 25px 15px;
+    padding: 15px 15px 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, .5);
+    transition: all .20s linear;
+    z-index: 0;
+    position: relative;
+  }
+  /* Contact Form */
+
+  * {
+    box-sizing: border-box;
+  }
+  input[type=text], select, textarea {
+    font-family: 'Indie Flower';
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    resize: vertical;
+  }
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  input[type=submit], input[type=reset] {
+    font-family: 'Indie Flower';
+    font-size: larger;
+    background-color: rgb(100,81,173);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 20%;
+    margin: 0 10%;
+  }
+  input[type=submit]:hover, input[type=reset]:hover {
+    background-color: rgb(62, 50, 107);
+  }
+  .containercontact {
+    border-radius: 15px;
+    background-color: var(--color-fst);
+    padding: 15px;
+  }
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  .row {
+    display: flex;
     justify-content: center;
   }
-  .btn-form:hover {
-    background-color: var(--color-trd);
+  .aste {
+    color: red;
+    font-size: 80%;
   }
-  .form-in {
-    background-image: url("img/freepng-joysticks2.png");
-    background-repeat: no-repeat;
-    background-color: var(--color-bg-alt);
-    border: 1px var(--color-bg-alt) solid;
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
+  .note {
+    font-size: 80%;
   }
-  .form {
-    background-color: var(--color-txt-alt);
-    border: var(--color-txt-alt) 1px solid;
-    border-radius: 0.5rem;
-    margin: 0.5rem;
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
-  .form-in p label input,
-  .form-in p label textarea {
-    font-family: var(--font-family-alt);
-    border: 1px solid var(--color-bg-alt);
-    border-radius: 0.5rem;
-    font-size: 1.2rem;
-    justify-content: space-between;
-    display: block;
-    resize: vertical;
-    max-height: 15rem;
-  }
-  .form-in p label {
-    display: block;
-  }
-  .form-in p {
-    font-size: 1.2rem;
-    font-weight: var(--font-bold);
-    display: block;
-    text-align: left;
-  }
-  .form-out {
-    width: 36rem;
-    background-color: var(--color-txt-alt);
-    border-radius: 0.5rem;
-    text-align: center;
-    margin: 1rem;
-    padding: 1rem 1rem 1rem;
-  }
-  .form-out a {
-    color: var(--color-txt);
-  }
-  .stn-form {
-    margin: 0.5rem;
-    background-image: url("img/freepng-joysticks.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-  }
+  
   
   /*s.xxi*/
   .stn-xxi {
@@ -414,6 +461,21 @@
     .showcase {
       margin: 1rem -0.5rem;
     }
+    /*Contacto*/
+    .polaroidcontacto {
+      width: 100%;
+      background: #ffffff;
+      display: inline-block;
+      margin: 25px 25px 15px;
+      padding: 15px 15px 15px;
+      text-decoration: none;
+      border-radius: 15px;
+      box-shadow: 0 12px 12px 0 rgba(0, 0, 0, .5);
+      transition: all .20s linear;
+      z-index: 0;
+      position: relative;
+ }
+
     /*footer*/
     .rrss {
       width: 33%;

@@ -39,31 +39,63 @@
     </header>
     <!--main-->
     <main>
-        <div class="titulador">
-            <h2>Contáctenos</h2>
-        </div>
-        <section class="stn-form">
-            <div class="form-out">
-                <form class="form" name="form-lacapsula" id="form" action="https://formspree.io/f/xwkzngrq" method="POST">
-                    <div class="form-in">
-                        <p><label class="form-label">Nombre <input type="text" name="nombre" id="nombre"  placeholder="Nombre"></label></p>
-                        <p><label class="form-label">Apellido <input type="text" name="apellido" id="apellido"  placeholder="Apellido"></label></p>
-                        <p><label class="form-label">Correo <input type="email" name="email" id="email" placeholder="mailito@example.com"></label></p>
-                        <p><label class="form-label">Teléfono <input type="tel" name="telefono" id="telefono" placeholder="1123456789"></label></p>
-                        <p><label class="form-label">Comentario <textarea name="texto" id="texto" placeholder="Su comentario"></textarea></label></p>
-                    </div>
-                    <div class="form-btn">
-                        <p>
-                            <button class="btn-form" type="reset" name="Borrar" value="Borrar">Borrar <i class="fa-solid fa-xmark"></i></button>
-                            <button class="btn-form" type="submit" name="Enviar" id="btn-enviar" value="Enviar">Enviar <i class="fa-solid fa-check"></i></button>
-                        </p>
-                    </div>
+        <div class="contacto">
+
+            <div class="polaroidcontacto">
+              <div class="containercontact">
+                <form action="/action_page.php">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="nombre">Nombre <span class="aste">*</span></label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre...">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="apellido">Apellido <span class="aste">*</span></label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido...">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="correo">Correo <span class="aste">*</span></label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="correo" name="correo" placeholder="Ingrese su correo...">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="telefono">Teléfono <span class="aste">*</span></label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="telefono" name="telefono" placeholder="Ingrese su teléfono...">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-25">
+                    <label for="asunto">Asunto <span class="aste">*</span></label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="asunto" name="asunto" placeholder="Escriba aquí su mensaje..." style="height:200px"></textarea>
+                  </div>
+                </div>
+                <br>
+                <span class="note"><span class="aste">*</span> Obligatorio</span>
+                <br><br>
+                <div class="row">
+                  <input type="reset" value="Borrar">
+                  <input type="submit" value="Enviar">
+                </div>
                 </form>
-                <a href="mailto:emiliano.david22@gmail.com" id="truco">Mail</a>
-            </div>
-        </section>
-    </main>
-    <!--footer-->
+              </div>
+        
+    </main>    <!--footer-->
     <footer>
         <div class="autores">
             <a href="https://github.com/athekat" target="_blank">Cortez, Alan</a>
